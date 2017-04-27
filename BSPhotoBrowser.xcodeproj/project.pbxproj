@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		661E8DDA1EB1E4DD00927437 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 661E8DD91EB1E4DD00927437 /* main.m */; };
+		661E8DDD1EB1E4DD00927437 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 661E8DDC1EB1E4DD00927437 /* AppDelegate.m */; };
+		661E8DE01EB1E4DD00927437 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 661E8DDF1EB1E4DD00927437 /* ViewController.m */; };
+		661E8DE31EB1E4DD00927437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 661E8DE11EB1E4DD00927437 /* Main.storyboard */; };
+		661E8DE51EB1E4DD00927437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 661E8DE41EB1E4DD00927437 /* Assets.xcassets */; };
+		661E8DE81EB1E4DD00927437 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 661E8DE61EB1E4DD00927437 /* LaunchScreen.storyboard */; };
+		661E8DF31EB1E4DD00927437 /* BSPhotoBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 661E8DF21EB1E4DD00927437 /* BSPhotoBrowserTests.m */; };
+		661E8DFE1EB1E4DD00927437 /* BSPhotoBrowserUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 661E8DFD1EB1E4DD00927437 /* BSPhotoBrowserUITests.m */; };
+		661E8E0E1EB1EC1600927437 /* BSPhotoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 661E8E0D1EB1EC1600927437 /* BSPhotoTool.m */; };
+		661E8E151EB1F54F00927437 /* BSPhotoBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 661E8E141EB1F54F00927437 /* BSPhotoBrowserController.m */; };
+		661E8E181EB1F90300927437 /* BSPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 661E8E171EB1F90300927437 /* BSPhotoBrowser.m */; };
+		661E8E1C1EB1FA1B00927437 /* BSPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 661E8E1B1EB1FA1B00927437 /* BSPhotoModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		661E8DEF1EB1E4DD00927437 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 661E8DCD1EB1E4DD00927437 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 661E8DD41EB1E4DD00927437;
+			remoteInfo = BSPhotoBrowser;
+		};
+		661E8DFA1EB1E4DD00927437 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 661E8DCD1EB1E4DD00927437 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 661E8DD41EB1E4DD00927437;
+			remoteInfo = BSPhotoBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		661E8DD51EB1E4DD00927437 /* BSPhotoBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSPhotoBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		661E8DD91EB1E4DD00927437 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		661E8DDB1EB1E4DD00927437 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		661E8DDC1EB1E4DD00927437 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		661E8DDE1EB1E4DD00927437 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		661E8DDF1EB1E4DD00927437 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		661E8DE21EB1E4DD00927437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		661E8DE41EB1E4DD00927437 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		661E8DE71EB1E4DD00927437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		661E8DE91EB1E4DD00927437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		661E8DEE1EB1E4DD00927437 /* BSPhotoBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BSPhotoBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		661E8DF21EB1E4DD00927437 /* BSPhotoBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSPhotoBrowserTests.m; sourceTree = "<group>"; };
+		661E8DF41EB1E4DD00927437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		661E8DF91EB1E4DD00927437 /* BSPhotoBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BSPhotoBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		661E8DFD1EB1E4DD00927437 /* BSPhotoBrowserUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSPhotoBrowserUITests.m; sourceTree = "<group>"; };
+		661E8DFF1EB1E4DD00927437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		661E8E0C1EB1EC1600927437 /* BSPhotoTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPhotoTool.h; sourceTree = "<group>"; };
+		661E8E0D1EB1EC1600927437 /* BSPhotoTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPhotoTool.m; sourceTree = "<group>"; };
+		661E8E0F1EB1EDDD00927437 /* BSPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPhotoBrowser.h; sourceTree = "<group>"; };
+		661E8E121EB1F49100927437 /* BSPhotoConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSPhotoConst.h; sourceTree = "<group>"; };
+		661E8E131EB1F54F00927437 /* BSPhotoBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPhotoBrowserController.h; sourceTree = "<group>"; };
+		661E8E141EB1F54F00927437 /* BSPhotoBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPhotoBrowserController.m; sourceTree = "<group>"; };
+		661E8E171EB1F90300927437 /* BSPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPhotoBrowser.m; sourceTree = "<group>"; };
+		661E8E1A1EB1FA1B00927437 /* BSPhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPhotoModel.h; sourceTree = "<group>"; };
+		661E8E1B1EB1FA1B00927437 /* BSPhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPhotoModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		661E8DD21EB1E4DD00927437 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		661E8DEB1EB1E4DD00927437 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		661E8DF61EB1E4DD00927437 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		661E8DCC1EB1E4DD00927437 = {
+			isa = PBXGroup;
+			children = (
+				661E8DD71EB1E4DD00927437 /* BSPhotoBrowser */,
+				661E8DF11EB1E4DD00927437 /* BSPhotoBrowserTests */,
+				661E8DFC1EB1E4DD00927437 /* BSPhotoBrowserUITests */,
+				661E8DD61EB1E4DD00927437 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		661E8DD61EB1E4DD00927437 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				661E8DD51EB1E4DD00927437 /* BSPhotoBrowser.app */,
+				661E8DEE1EB1E4DD00927437 /* BSPhotoBrowserTests.xctest */,
+				661E8DF91EB1E4DD00927437 /* BSPhotoBrowserUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		661E8DD71EB1E4DD00927437 /* BSPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				661E8E0B1EB1E56D00927437 /* BSPhotoBrowser */,
+				661E8DDB1EB1E4DD00927437 /* AppDelegate.h */,
+				661E8DDC1EB1E4DD00927437 /* AppDelegate.m */,
+				661E8DDE1EB1E4DD00927437 /* ViewController.h */,
+				661E8DDF1EB1E4DD00927437 /* ViewController.m */,
+				661E8DE11EB1E4DD00927437 /* Main.storyboard */,
+				661E8DE41EB1E4DD00927437 /* Assets.xcassets */,
+				661E8DE61EB1E4DD00927437 /* LaunchScreen.storyboard */,
+				661E8DE91EB1E4DD00927437 /* Info.plist */,
+				661E8DD81EB1E4DD00927437 /* Supporting Files */,
+			);
+			path = BSPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		661E8DD81EB1E4DD00927437 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				661E8DD91EB1E4DD00927437 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		661E8DF11EB1E4DD00927437 /* BSPhotoBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				661E8DF21EB1E4DD00927437 /* BSPhotoBrowserTests.m */,
+				661E8DF41EB1E4DD00927437 /* Info.plist */,
+			);
+			path = BSPhotoBrowserTests;
+			sourceTree = "<group>";
+		};
+		661E8DFC1EB1E4DD00927437 /* BSPhotoBrowserUITests */ = {
+			isa = PBXGroup;
+			children = (
+				661E8DFD1EB1E4DD00927437 /* BSPhotoBrowserUITests.m */,
+				661E8DFF1EB1E4DD00927437 /* Info.plist */,
+			);
+			path = BSPhotoBrowserUITests;
+			sourceTree = "<group>";
+		};
+		661E8E0B1EB1E56D00927437 /* BSPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				661E8E191EB1F9BB00927437 /* model */,
+				661E8E161EB1F74500927437 /* views */,
+				661E8E121EB1F49100927437 /* BSPhotoConst.h */,
+				661E8E0F1EB1EDDD00927437 /* BSPhotoBrowser.h */,
+				661E8E171EB1F90300927437 /* BSPhotoBrowser.m */,
+				661E8E0C1EB1EC1600927437 /* BSPhotoTool.h */,
+				661E8E0D1EB1EC1600927437 /* BSPhotoTool.m */,
+				661E8E131EB1F54F00927437 /* BSPhotoBrowserController.h */,
+				661E8E141EB1F54F00927437 /* BSPhotoBrowserController.m */,
+			);
+			path = BSPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		661E8E161EB1F74500927437 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		661E8E191EB1F9BB00927437 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				661E8E1A1EB1FA1B00927437 /* BSPhotoModel.h */,
+				661E8E1B1EB1FA1B00927437 /* BSPhotoModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		661E8DD41EB1E4DD00927437 /* BSPhotoBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 661E8E021EB1E4DD00927437 /* Build configuration list for PBXNativeTarget "BSPhotoBrowser" */;
+			buildPhases = (
+				661E8DD11EB1E4DD00927437 /* Sources */,
+				661E8DD21EB1E4DD00927437 /* Frameworks */,
+				661E8DD31EB1E4DD00927437 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BSPhotoBrowser;
+			productName = BSPhotoBrowser;
+			productReference = 661E8DD51EB1E4DD00927437 /* BSPhotoBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		661E8DED1EB1E4DD00927437 /* BSPhotoBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 661E8E051EB1E4DD00927437 /* Build configuration list for PBXNativeTarget "BSPhotoBrowserTests" */;
+			buildPhases = (
+				661E8DEA1EB1E4DD00927437 /* Sources */,
+				661E8DEB1EB1E4DD00927437 /* Frameworks */,
+				661E8DEC1EB1E4DD00927437 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				661E8DF01EB1E4DD00927437 /* PBXTargetDependency */,
+			);
+			name = BSPhotoBrowserTests;
+			productName = BSPhotoBrowserTests;
+			productReference = 661E8DEE1EB1E4DD00927437 /* BSPhotoBrowserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		661E8DF81EB1E4DD00927437 /* BSPhotoBrowserUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 661E8E081EB1E4DD00927437 /* Build configuration list for PBXNativeTarget "BSPhotoBrowserUITests" */;
+			buildPhases = (
+				661E8DF51EB1E4DD00927437 /* Sources */,
+				661E8DF61EB1E4DD00927437 /* Frameworks */,
+				661E8DF71EB1E4DD00927437 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				661E8DFB1EB1E4DD00927437 /* PBXTargetDependency */,
+			);
+			name = BSPhotoBrowserUITests;
+			productName = BSPhotoBrowserUITests;
+			productReference = 661E8DF91EB1E4DD00927437 /* BSPhotoBrowserUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		661E8DCD1EB1E4DD00927437 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = LonlyCat;
+				TargetAttributes = {
+					661E8DD41EB1E4DD00927437 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = F7Q8CT99FG;
+						ProvisioningStyle = Automatic;
+					};
+					661E8DED1EB1E4DD00927437 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = F7Q8CT99FG;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 661E8DD41EB1E4DD00927437;
+					};
+					661E8DF81EB1E4DD00927437 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = F7Q8CT99FG;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 661E8DD41EB1E4DD00927437;
+					};
+				};
+			};
+			buildConfigurationList = 661E8DD01EB1E4DD00927437 /* Build configuration list for PBXProject "BSPhotoBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 661E8DCC1EB1E4DD00927437;
+			productRefGroup = 661E8DD61EB1E4DD00927437 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				661E8DD41EB1E4DD00927437 /* BSPhotoBrowser */,
+				661E8DED1EB1E4DD00927437 /* BSPhotoBrowserTests */,
+				661E8DF81EB1E4DD00927437 /* BSPhotoBrowserUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		661E8DD31EB1E4DD00927437 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				661E8DE81EB1E4DD00927437 /* LaunchScreen.storyboard in Resources */,
+				661E8DE51EB1E4DD00927437 /* Assets.xcassets in Resources */,
+				661E8DE31EB1E4DD00927437 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		661E8DEC1EB1E4DD00927437 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		661E8DF71EB1E4DD00927437 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		661E8DD11EB1E4DD00927437 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				661E8DE01EB1E4DD00927437 /* ViewController.m in Sources */,
+				661E8E151EB1F54F00927437 /* BSPhotoBrowserController.m in Sources */,
+				661E8E0E1EB1EC1600927437 /* BSPhotoTool.m in Sources */,
+				661E8DDD1EB1E4DD00927437 /* AppDelegate.m in Sources */,
+				661E8E181EB1F90300927437 /* BSPhotoBrowser.m in Sources */,
+				661E8E1C1EB1FA1B00927437 /* BSPhotoModel.m in Sources */,
+				661E8DDA1EB1E4DD00927437 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		661E8DEA1EB1E4DD00927437 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				661E8DF31EB1E4DD00927437 /* BSPhotoBrowserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		661E8DF51EB1E4DD00927437 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				661E8DFE1EB1E4DD00927437 /* BSPhotoBrowserUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		661E8DF01EB1E4DD00927437 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 661E8DD41EB1E4DD00927437 /* BSPhotoBrowser */;
+			targetProxy = 661E8DEF1EB1E4DD00927437 /* PBXContainerItemProxy */;
+		};
+		661E8DFB1EB1E4DD00927437 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 661E8DD41EB1E4DD00927437 /* BSPhotoBrowser */;
+			targetProxy = 661E8DFA1EB1E4DD00927437 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		661E8DE11EB1E4DD00927437 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				661E8DE21EB1E4DD00927437 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		661E8DE61EB1E4DD00927437 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				661E8DE71EB1E4DD00927437 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		661E8E001EB1E4DD00927437 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		661E8E011EB1E4DD00927437 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		661E8E031EB1E4DD00927437 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F7Q8CT99FG;
+				INFOPLIST_FILE = BSPhotoBrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Pilot.BSPhotoBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		661E8E041EB1E4DD00927437 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F7Q8CT99FG;
+				INFOPLIST_FILE = BSPhotoBrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Pilot.BSPhotoBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		661E8E061EB1E4DD00927437 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = F7Q8CT99FG;
+				INFOPLIST_FILE = BSPhotoBrowserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Pilot.BSPhotoBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BSPhotoBrowser.app/BSPhotoBrowser";
+			};
+			name = Debug;
+		};
+		661E8E071EB1E4DD00927437 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = F7Q8CT99FG;
+				INFOPLIST_FILE = BSPhotoBrowserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Pilot.BSPhotoBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BSPhotoBrowser.app/BSPhotoBrowser";
+			};
+			name = Release;
+		};
+		661E8E091EB1E4DD00927437 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = F7Q8CT99FG;
+				INFOPLIST_FILE = BSPhotoBrowserUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Pilot.BSPhotoBrowserUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BSPhotoBrowser;
+			};
+			name = Debug;
+		};
+		661E8E0A1EB1E4DD00927437 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = F7Q8CT99FG;
+				INFOPLIST_FILE = BSPhotoBrowserUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Pilot.BSPhotoBrowserUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BSPhotoBrowser;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		661E8DD01EB1E4DD00927437 /* Build configuration list for PBXProject "BSPhotoBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				661E8E001EB1E4DD00927437 /* Debug */,
+				661E8E011EB1E4DD00927437 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		661E8E021EB1E4DD00927437 /* Build configuration list for PBXNativeTarget "BSPhotoBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				661E8E031EB1E4DD00927437 /* Debug */,
+				661E8E041EB1E4DD00927437 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		661E8E051EB1E4DD00927437 /* Build configuration list for PBXNativeTarget "BSPhotoBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				661E8E061EB1E4DD00927437 /* Debug */,
+				661E8E071EB1E4DD00927437 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		661E8E081EB1E4DD00927437 /* Build configuration list for PBXNativeTarget "BSPhotoBrowserUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				661E8E091EB1E4DD00927437 /* Debug */,
+				661E8E0A1EB1E4DD00927437 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 661E8DCD1EB1E4DD00927437 /* Project object */;
+}
