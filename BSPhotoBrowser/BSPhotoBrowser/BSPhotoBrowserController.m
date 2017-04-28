@@ -10,6 +10,18 @@
 
 @interface BSPhotoBrowserController ()
 
+/**
+ 所有相册
+ */
+@property (nonatomic, strong) NSArray *albums;
+
+/**
+ 相册中的所有图片
+ */
+@property (nonatomic, strong) NSArray *albumPhotos;
+
+@property (nonatomic, strong) NSMutableArray *selectedPhotos;
+
 @end
 
 @implementation BSPhotoBrowserController

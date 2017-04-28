@@ -6,10 +6,9 @@
 //  Copyright © 2017年 LonlyCat. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @class BSPhotoModel;
-
 @protocol BSPhotoBrowserDelegate <NSObject>
 
 - (void)browserDidSelectedImages:(NSArray<BSPhotoModel *> *)images;
@@ -19,11 +18,13 @@
 
 @interface BSPhotoBrowser : NSObject
 
-/**
- 最大照片选择数 default: 6
- */
+/** 最大照片选择数 default: 6 */
 @property (nonatomic, assign) NSInteger maxImageCount;
-//当前已经选择的图片
-@property (nonatomic, strong) NSMutableArray<BSPhotoModel *> *arraySelectPhotos;
+/** 当前已选择的照片 */
+@property (nonatomic, strong) NSMutableArray<BSPhotoModel *> *selectPhotos;
+
+
++ (instancetype)shareInstance;
+- (void)showBrowerWithDelegate:(UIViewController<BSPhotoBrowserDelegate> *)delegate;
 
 @end

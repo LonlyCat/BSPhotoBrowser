@@ -19,6 +19,17 @@
 		661E8E151EB1F54F00927437 /* BSPhotoBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 661E8E141EB1F54F00927437 /* BSPhotoBrowserController.m */; };
 		661E8E181EB1F90300927437 /* BSPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 661E8E171EB1F90300927437 /* BSPhotoBrowser.m */; };
 		661E8E1C1EB1FA1B00927437 /* BSPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 661E8E1B1EB1FA1B00927437 /* BSPhotoModel.m */; };
+		667AFDC31EB2E96200F1F481 /* BSPhotoAlbumList.m in Sources */ = {isa = PBXBuildFile; fileRef = 667AFDC21EB2E96200F1F481 /* BSPhotoAlbumList.m */; };
+		667AFDCD1EB2F27900F1F481 /* browser_choose_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 667AFDC51EB2F27900F1F481 /* browser_choose_normal@2x.png */; };
+		667AFDCE1EB2F27900F1F481 /* browser_choose_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 667AFDC61EB2F27900F1F481 /* browser_choose_normal@3x.png */; };
+		667AFDCF1EB2F27900F1F481 /* browser_choose_pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 667AFDC71EB2F27900F1F481 /* browser_choose_pressed@2x.png */; };
+		667AFDD01EB2F27900F1F481 /* browser_choose_pressed@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 667AFDC81EB2F27900F1F481 /* browser_choose_pressed@3x.png */; };
+		667AFDD11EB2F27900F1F481 /* browser_pull@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 667AFDC91EB2F27900F1F481 /* browser_pull@2x.png */; };
+		667AFDD21EB2F27900F1F481 /* browser_pull@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 667AFDCA1EB2F27900F1F481 /* browser_pull@3x.png */; };
+		667AFDD31EB2F27900F1F481 /* browser_remind@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 667AFDCB1EB2F27900F1F481 /* browser_remind@2x.png */; };
+		667AFDD41EB2F27900F1F481 /* browser_remind@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 667AFDCC1EB2F27900F1F481 /* browser_remind@3x.png */; };
+		667AFDD71EB3155E00F1F481 /* BSAlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 667AFDD61EB3155E00F1F481 /* BSAlbumModel.m */; };
+		667AFDDA1EB33B3D00F1F481 /* BSPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 667AFDD91EB33B3D00F1F481 /* BSPhotoPreviewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +75,20 @@
 		661E8E171EB1F90300927437 /* BSPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPhotoBrowser.m; sourceTree = "<group>"; };
 		661E8E1A1EB1FA1B00927437 /* BSPhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPhotoModel.h; sourceTree = "<group>"; };
 		661E8E1B1EB1FA1B00927437 /* BSPhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPhotoModel.m; sourceTree = "<group>"; };
+		667AFDC11EB2E96200F1F481 /* BSPhotoAlbumList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPhotoAlbumList.h; sourceTree = "<group>"; };
+		667AFDC21EB2E96200F1F481 /* BSPhotoAlbumList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPhotoAlbumList.m; sourceTree = "<group>"; };
+		667AFDC51EB2F27900F1F481 /* browser_choose_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "browser_choose_normal@2x.png"; sourceTree = "<group>"; };
+		667AFDC61EB2F27900F1F481 /* browser_choose_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "browser_choose_normal@3x.png"; sourceTree = "<group>"; };
+		667AFDC71EB2F27900F1F481 /* browser_choose_pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "browser_choose_pressed@2x.png"; sourceTree = "<group>"; };
+		667AFDC81EB2F27900F1F481 /* browser_choose_pressed@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "browser_choose_pressed@3x.png"; sourceTree = "<group>"; };
+		667AFDC91EB2F27900F1F481 /* browser_pull@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "browser_pull@2x.png"; sourceTree = "<group>"; };
+		667AFDCA1EB2F27900F1F481 /* browser_pull@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "browser_pull@3x.png"; sourceTree = "<group>"; };
+		667AFDCB1EB2F27900F1F481 /* browser_remind@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "browser_remind@2x.png"; sourceTree = "<group>"; };
+		667AFDCC1EB2F27900F1F481 /* browser_remind@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "browser_remind@3x.png"; sourceTree = "<group>"; };
+		667AFDD51EB3155E00F1F481 /* BSAlbumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSAlbumModel.h; sourceTree = "<group>"; };
+		667AFDD61EB3155E00F1F481 /* BSAlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSAlbumModel.m; sourceTree = "<group>"; };
+		667AFDD81EB33B3D00F1F481 /* BSPhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPhotoPreviewController.h; sourceTree = "<group>"; };
+		667AFDD91EB33B3D00F1F481 /* BSPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPhotoPreviewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,15 +182,18 @@
 		661E8E0B1EB1E56D00927437 /* BSPhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				667AFDC41EB2F27900F1F481 /* images */,
 				661E8E191EB1F9BB00927437 /* model */,
 				661E8E161EB1F74500927437 /* views */,
 				661E8E121EB1F49100927437 /* BSPhotoConst.h */,
-				661E8E0F1EB1EDDD00927437 /* BSPhotoBrowser.h */,
-				661E8E171EB1F90300927437 /* BSPhotoBrowser.m */,
 				661E8E0C1EB1EC1600927437 /* BSPhotoTool.h */,
 				661E8E0D1EB1EC1600927437 /* BSPhotoTool.m */,
+				661E8E0F1EB1EDDD00927437 /* BSPhotoBrowser.h */,
+				661E8E171EB1F90300927437 /* BSPhotoBrowser.m */,
 				661E8E131EB1F54F00927437 /* BSPhotoBrowserController.h */,
 				661E8E141EB1F54F00927437 /* BSPhotoBrowserController.m */,
+				667AFDD81EB33B3D00F1F481 /* BSPhotoPreviewController.h */,
+				667AFDD91EB33B3D00F1F481 /* BSPhotoPreviewController.m */,
 			);
 			path = BSPhotoBrowser;
 			sourceTree = "<group>";
@@ -173,6 +201,8 @@
 		661E8E161EB1F74500927437 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				667AFDC11EB2E96200F1F481 /* BSPhotoAlbumList.h */,
+				667AFDC21EB2E96200F1F481 /* BSPhotoAlbumList.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -182,8 +212,25 @@
 			children = (
 				661E8E1A1EB1FA1B00927437 /* BSPhotoModel.h */,
 				661E8E1B1EB1FA1B00927437 /* BSPhotoModel.m */,
+				667AFDD51EB3155E00F1F481 /* BSAlbumModel.h */,
+				667AFDD61EB3155E00F1F481 /* BSAlbumModel.m */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		667AFDC41EB2F27900F1F481 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				667AFDC51EB2F27900F1F481 /* browser_choose_normal@2x.png */,
+				667AFDC61EB2F27900F1F481 /* browser_choose_normal@3x.png */,
+				667AFDC71EB2F27900F1F481 /* browser_choose_pressed@2x.png */,
+				667AFDC81EB2F27900F1F481 /* browser_choose_pressed@3x.png */,
+				667AFDC91EB2F27900F1F481 /* browser_pull@2x.png */,
+				667AFDCA1EB2F27900F1F481 /* browser_pull@3x.png */,
+				667AFDCB1EB2F27900F1F481 /* browser_remind@2x.png */,
+				667AFDCC1EB2F27900F1F481 /* browser_remind@3x.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,9 +342,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				667AFDD11EB2F27900F1F481 /* browser_pull@2x.png in Resources */,
+				667AFDCE1EB2F27900F1F481 /* browser_choose_normal@3x.png in Resources */,
+				667AFDD31EB2F27900F1F481 /* browser_remind@2x.png in Resources */,
+				667AFDD41EB2F27900F1F481 /* browser_remind@3x.png in Resources */,
+				667AFDCF1EB2F27900F1F481 /* browser_choose_pressed@2x.png in Resources */,
+				667AFDD21EB2F27900F1F481 /* browser_pull@3x.png in Resources */,
 				661E8DE81EB1E4DD00927437 /* LaunchScreen.storyboard in Resources */,
+				667AFDCD1EB2F27900F1F481 /* browser_choose_normal@2x.png in Resources */,
 				661E8DE51EB1E4DD00927437 /* Assets.xcassets in Resources */,
 				661E8DE31EB1E4DD00927437 /* Main.storyboard in Resources */,
+				667AFDD01EB2F27900F1F481 /* browser_choose_pressed@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,11 +378,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				661E8DE01EB1E4DD00927437 /* ViewController.m in Sources */,
+				667AFDC31EB2E96200F1F481 /* BSPhotoAlbumList.m in Sources */,
 				661E8E151EB1F54F00927437 /* BSPhotoBrowserController.m in Sources */,
 				661E8E0E1EB1EC1600927437 /* BSPhotoTool.m in Sources */,
+				667AFDD71EB3155E00F1F481 /* BSAlbumModel.m in Sources */,
 				661E8DDD1EB1E4DD00927437 /* AppDelegate.m in Sources */,
 				661E8E181EB1F90300927437 /* BSPhotoBrowser.m in Sources */,
 				661E8E1C1EB1FA1B00927437 /* BSPhotoModel.m in Sources */,
+				667AFDDA1EB33B3D00F1F481 /* BSPhotoPreviewController.m in Sources */,
 				661E8DDA1EB1E4DD00927437 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,6 +624,7 @@
 				661E8E041EB1E4DD00927437 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		661E8E051EB1E4DD00927437 /* Build configuration list for PBXNativeTarget "BSPhotoBrowserTests" */ = {
 			isa = XCConfigurationList;
@@ -574,6 +633,7 @@
 				661E8E071EB1E4DD00927437 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		661E8E081EB1E4DD00927437 /* Build configuration list for PBXNativeTarget "BSPhotoBrowserUITests" */ = {
 			isa = XCConfigurationList;
@@ -582,6 +642,7 @@
 				661E8E0A1EB1E4DD00927437 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,9 +10,9 @@
 #define BSPhotoConst_h
 
 typedef enum {
-    BSPhotoAssetLoadingTypeAll = 0,
-    BSPhotoAssetLoadingTypeImage,
-    BSPhotoAssetLoadingTypeVideo
-}BSPhotoAssetLoadingType;
+    BSAssetMediaTypeAll   = 0,
+    BSAssetMediaTypeImage = 1,
+    BSAssetMediaTypeVideo = 2
+}BSAssetMediaType;
 
 #endif /* BSPhotoConst_h */
