@@ -1,5 +1,5 @@
 //
-//  BSAlbumModel.h
+//  BSPAlbumModel.h
 //  BSPhotoBrowser
 //
 //  Created by LonlyCat on 2017/4/28.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class PHFetchResult;
-@interface BSAlbumModel : NSObject
+@interface BSPAlbumModel : NSObject
 
 /** 相簿名字 */
 @property (nonatomic, strong) NSString      *name;

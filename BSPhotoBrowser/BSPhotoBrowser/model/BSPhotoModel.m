@@ -8,7 +8,8 @@
 
 #import "BSPhotoModel.h"
 
-#import "BSPhotoTool.h"
+#import "BSPTool.h"
+#import <Photos/Photos.h>
 
 @implementation BSPhotoModel
 
@@ -21,7 +22,7 @@
         return;
     }
     
-    [[BSPhotoTool shareInstance] getPhotoWithAsset:_asset
+    [[BSPTool shareInstance] getPhotoWithAsset:_asset
                                               size:size
                                      isSynchronous:NO
                                         completion:^(UIImage *photo, NSDictionary *info, BOOL isDegraded)
@@ -44,7 +45,7 @@
         return;
     }
     
-    [[BSPhotoTool shareInstance] getOriginalPhotoWithAsset:_asset
+    [[BSPTool shareInstance] getOriginalPhotoWithAsset:_asset
                                                 completion:^(UIImage *photo, NSDictionary *info)
      {
          _originImage = photo;
@@ -57,7 +58,7 @@
      }];
 }
 
-#pragma mark - setter
+#pragma mark - override
 - (void)setAsset:(PHAsset *)asset
 {
     if (_asset != asset)
@@ -66,7 +67,20 @@
         
         _thumbImage = nil;
         _originImage = nil;
+        
+        _mediaType = asset.mediaType;
     }
+}
+
+- (BOOL)isEqual:(id)object
+{
+    if ([object isKindOfClass:[BSPhotoModel class]])
+    {
+        BSPhotoModel *other = (BSPhotoModel *)object;
+        
+        return [_asset isEqual:other.asset];
+    }
+    return NO;
 }
 
 @end

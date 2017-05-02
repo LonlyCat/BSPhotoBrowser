@@ -7,7 +7,6 @@
 //
 
 #import "BSPhotoBrowser.h"
-#import "BSPhotoBrowserController.h"
 
 @interface BSPhotoBrowser ()
 
@@ -15,6 +14,8 @@
 @property (nonatomic, weak) BSPhotoBrowserController *browserVC;
 
 @property (nonatomic, weak) UIViewController<BSPhotoBrowserDelegate> *delegate;
+
+@property (nonatomic, assign) BSAssetMediaType mediaType;
 
 @end
 
@@ -30,13 +31,26 @@
     return browser;
 }
 
-- (void)showBrowerWithDelegate:(UIViewController<BSPhotoBrowserDelegate> *)delegate
+- (instancetype)init
 {
+    if (self = [super init])
+    {
+        _maxImageCount = 6;
+    }
+    return self;
+}
+
+- (void)showBrowerWithMediaType:(BSAssetMediaType)type
+                       delegate:(UIViewController<BSPhotoBrowserDelegate> *)delegate
+{
+    _mediaType = type;
     _delegate = delegate;
     
     BSPhotoBrowserController *browserVC = [[BSPhotoBrowserController alloc] init];
     browserVC.maxImageCount = _maxImageCount;
     browserVC.selectPhotos = _selectPhotos;
+    browserVC.mediaType = _mediaType;
+    browserVC.delegate = _delegate;
     _browserVC = browserVC;
     
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:browserVC];

@@ -1,26 +1,26 @@
 //
-//  BSAlbumModel.m
+//  BSPAlbumModel.m
 //  BSPhotoBrowser
 //
 //  Created by LonlyCat on 2017/4/28.
 //  Copyright © 2017年 LonlyCat. All rights reserved.
 //
 
-#import "BSAlbumModel.h"
+#import "BSPAlbumModel.h"
 #import <Photos/Photos.h>
 
-@implementation BSAlbumModel
+@implementation BSPAlbumModel
 
 + (instancetype)modelWithFetchResult:(PHFetchResult *)result
                                 name:(NSString *)name
 {
-    BSAlbumModel *model = [[BSAlbumModel alloc] init];
+    BSPAlbumModel *model = [[BSPAlbumModel alloc] init];
     model.result = result;
     model.name = name;
     return model;
 }
 
-#pragma mark - setter
+#pragma mark - override
 - (void)setResult:(PHFetchResult *)result
 {
     _result = result;

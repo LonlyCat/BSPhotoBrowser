@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BSPConst.h"
 
 @class PHAsset;
 @interface BSPhotoModel : NSObject
@@ -15,6 +16,7 @@
 @property (nonatomic, strong) UIImage   *thumbImage;
 @property (nonatomic, strong) UIImage   *originImage;
 @property (nonatomic, assign) NSInteger index;
+@property (nonatomic, assign) BSAssetMediaType mediaType;
 
 @property (nonatomic, assign, getter=isSelected) BOOL selected;
 

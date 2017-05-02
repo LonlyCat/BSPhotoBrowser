@@ -1,28 +1,28 @@
 //
-//  BSPhotoTool.m
+//  BSPTool.m
 //  BSPhotoBrowser
 //
 //  Created by LonlyCat on 2017/4/27.
 //  Copyright © 2017年 LonlyCat. All rights reserved.
 //
 
-#import "BSPhotoTool.h"
+#import "BSPTool.h"
 #import <Photos/Photos.h>
 
-@interface BSPhotoTool ()
+@interface BSPTool ()
 
 @property (nonatomic, strong) PHCachingImageManager *cachingImageManager;
 
 @end
 
-@implementation BSPhotoTool
+@implementation BSPTool
 
 + (instancetype)shareInstance
 {
-    static BSPhotoTool *tool = nil;
+    static BSPTool *tool = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        tool = [[BSPhotoTool alloc] init];
+        tool = [[BSPTool alloc] init];
         tool.cachingImageManager = [[PHCachingImageManager alloc] init];
     });
     return tool;
@@ -40,7 +40,7 @@
 
 #pragma mark - get album
 - (void)getAllAlbumsWithMediaType:(BSAssetMediaType)mediaType
-                       completion:(void (^)(NSArray<BSAlbumModel *> *models))completion
+                       completion:(void (^)(NSArray<BSPAlbumModel *> *models))completion
 {
     NSMutableArray *albumArr = [NSMutableArray array];
     
@@ -60,18 +60,21 @@
                                                                           options:nil];
     [smartAlbums enumerateObjectsUsingBlock:^(PHAssetCollection * _Nonnull collection, NSUInteger idx, BOOL * _Nonnull stop)
     {
+        NSLog(@"album title: %@", collection.localizedTitle);
         PHFetchResult *result = [PHAsset fetchAssetsInAssetCollection:collection
                                                               options:options];
         if (result.count > 0
             && !([collection.localizedTitle containsString:@"Deleted"]
                 || [collection.localizedTitle containsString:@"最近删除"]))
         {
-            if ([collection.localizedTitle isEqualToString:@"Camera Roll"] || [collection.localizedTitle isEqualToString:@"相机胶卷"]) {
-                [albumArr insertObject:[BSAlbumModel modelWithFetchResult:result
+            if ([collection.localizedTitle isEqualToString:@"All Photos"]
+                || [collection.localizedTitle isEqualToString:@"所有照片"])
+            {
+                [albumArr insertObject:[BSPAlbumModel modelWithFetchResult:result
                                                                      name:collection.localizedTitle]
                                atIndex:0];
             } else {
-                [albumArr addObject:[BSAlbumModel modelWithFetchResult:result
+                [albumArr addObject:[BSPAlbumModel modelWithFetchResult:result
                                                                   name:collection.localizedTitle]];
             }
         }
@@ -87,11 +90,11 @@
         if (result.count > 0)
         {
             if ([collection.localizedTitle isEqualToString:@"My Photo Stream"]) {
-                [albumArr insertObject:[BSAlbumModel modelWithFetchResult:result
+                [albumArr insertObject:[BSPAlbumModel modelWithFetchResult:result
                                                                      name:collection.localizedTitle]
                                atIndex:1];
             } else {
-                [albumArr addObject:[BSAlbumModel modelWithFetchResult:result
+                [albumArr addObject:[BSPAlbumModel modelWithFetchResult:result
                                                                   name:collection.localizedTitle]];
             }
         }

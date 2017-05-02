@@ -7,15 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BSPConst.h"
+#import "BSPhotoBrowserController.h"
 
 @class BSPhotoModel;
-@protocol BSPhotoBrowserDelegate <NSObject>
-
-- (void)browserDidSelectedImages:(NSArray<BSPhotoModel *> *)images;
-- (void)browserCancleSelected;
-
-@end
-
 @interface BSPhotoBrowser : NSObject
 
 /** 最大照片选择数 default: 6 */
@@ -25,6 +20,7 @@
 
 
 + (instancetype)shareInstance;
-- (void)showBrowerWithDelegate:(UIViewController<BSPhotoBrowserDelegate> *)delegate;
+- (void)showBrowerWithMediaType:(BSAssetMediaType)type
+                       delegate:(UIViewController<BSPhotoBrowserDelegate> *)delegate;
 
 @end

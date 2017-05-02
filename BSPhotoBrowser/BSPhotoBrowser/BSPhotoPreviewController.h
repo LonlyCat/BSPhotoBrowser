@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BSPConst.h"
 
+@class BSPhotoModel;
 @interface BSPhotoPreviewController : UIViewController
+
+@property (nonatomic, strong) NSMutableArray<BSPhotoModel *> *photos;
+@property (nonatomic, assign) BSAssetMediaType mediaType;
+@property (nonatomic, assign) NSInteger currentIndex;
 
 @end

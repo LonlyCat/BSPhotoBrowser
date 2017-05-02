@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "BSPhotoBrowser.h"
 
-@interface ViewController ()
+@interface ViewController () <BSPhotoBrowserDelegate>
 
 @end
 
@@ -19,11 +20,28 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [[BSPhotoBrowser shareInstance] showBrowerWithMediaType:BSAssetMediaTypeAll
+                                                   delegate:self];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - BSPhotoBrowserDelegate
+- (void)browserDidSelectedImages:(NSArray<BSPhotoModel *> *)images
+{
+    
+}
+
+- (void)browserCancleSelected
+{
+    
+}
 
 @end

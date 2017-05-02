@@ -8,12 +8,23 @@
 
 #import <UIKit/UIKit.h>
 #import "BSPhotoModel.h"
+#import "BSPConst.h"
 
+@protocol BSPhotoBrowserDelegate <NSObject>
+
+- (void)browserDidSelectedImages:(NSArray<BSPhotoModel *> *)images;
+- (void)browserCancleSelected;
+
+@end
 @interface BSPhotoBrowserController : UIViewController
 
 /** 最大照片选择数 default: 6 */
 @property (nonatomic, assign) NSInteger maxImageCount;
+/** 相簿显示内容 */
+@property (nonatomic, assign) BSAssetMediaType mediaType;
 /** 当前已选择的照片 */
 @property (nonatomic, strong) NSMutableArray<BSPhotoModel *> *selectPhotos;
+/** 代理对象 */
+@property (nonatomic, weak) UIViewController<BSPhotoBrowserDelegate> *delegate;
 
 @end

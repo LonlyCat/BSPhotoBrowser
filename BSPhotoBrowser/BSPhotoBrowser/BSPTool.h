@@ -1,5 +1,5 @@
 //
-//  BSPhotoTool.h
+//  BSPTool.h
 //  BSPhotoBrowser
 //
 //  Created by LonlyCat on 2017/4/27.
@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-#import "BSAlbumModel.h"
+#import "BSPAlbumModel.h"
 #import "BSPhotoModel.h"
-#import "BSPhotoConst.h"
+#import "BSPConst.h"
 
-@interface BSPhotoTool : NSObject
+@interface BSPTool : NSObject
 
 /**
  获取单例
@@ -33,7 +33,7 @@
  @param completion 成功回调
  */
 - (void)getAllAlbumsWithMediaType:(BSAssetMediaType)mediaType
-                       completion:(void (^)(NSArray<BSAlbumModel *> *models))completion;
+                       completion:(void (^)(NSArray<BSPAlbumModel *> *models))completion;
 
 /**
  获得某个相簿中的所有图片
