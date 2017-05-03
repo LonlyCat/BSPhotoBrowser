@@ -16,6 +16,7 @@
 @property (nonatomic, strong) UIImage   *thumbImage;
 @property (nonatomic, strong) UIImage   *originImage;
 @property (nonatomic, assign) NSInteger index;
+@property (nonatomic, assign) NSTimeInterval   duration;
 @property (nonatomic, assign) BSAssetMediaType mediaType;
 
 @property (nonatomic, assign, getter=isSelected) BOOL selected;

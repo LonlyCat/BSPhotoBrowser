@@ -48,12 +48,12 @@
     
     BSPhotoBrowserController *browserVC = [[BSPhotoBrowserController alloc] init];
     browserVC.maxImageCount = _maxImageCount;
-    browserVC.selectPhotos = _selectPhotos;
     browserVC.mediaType = _mediaType;
     browserVC.delegate = _delegate;
     _browserVC = browserVC;
     
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:browserVC];
+    nav.interactivePopGestureRecognizer.enabled = NO;
     nav.navigationBar.translucent = NO;
     _nav = nav;
     

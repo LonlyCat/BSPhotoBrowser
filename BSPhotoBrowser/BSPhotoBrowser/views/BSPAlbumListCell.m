@@ -67,7 +67,7 @@
      {
          BSPhotoModel *pModel = [models firstObject];
          
-         [pModel getThumbImageWithSize:CGSizeMake(50, 50) completed:^(UIImage *image)
+         [pModel getThumbImageWithSize:CGSizeZero completed:^(UIImage *image)
          {
              weakSelf.photoView.image = image;
          }];

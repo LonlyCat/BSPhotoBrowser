@@ -66,4 +66,23 @@
 - (void)getOriginalPhotoWithAsset:(PHAsset *)asset
                        completion:(void (^)(UIImage *photo,NSDictionary *info))completion;
 
+/**
+ 获取视频
+
+ @param asset PHAsset 实例
+ @param limitByte 大小限制 0: 无限制
+ @param completion 成功回调
+ */
+- (void)getVideoWithAsset:(PHAsset *)asset
+                limitByte:(NSInteger)limitByte
+               completion:(void(^)(NSURL *fileUrl, NSError *error))completion;
+/**
+ 获取数组内资源大小
+
+ @param photos BSPhotoModel 数组
+ @param completion 成功回调
+ */
+- (void)getPhotosBytesWithArray:(NSArray *)photos
+                     completion:(void (^)(NSInteger photosBytes))completion;
+
 @end

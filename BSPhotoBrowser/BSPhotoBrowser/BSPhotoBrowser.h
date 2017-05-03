@@ -15,9 +15,10 @@
 
 /** 最大照片选择数 default: 6 */
 @property (nonatomic, assign) NSInteger maxImageCount;
-/** 当前已选择的照片 */
-@property (nonatomic, strong) NSMutableArray<BSPhotoModel *> *selectPhotos;
-
+/** 最大视频时长 default: 0 没有限制 */
+@property (nonatomic, assign) NSInteger maxVideoSec;
+/** 最大视频字节数 default: 0 没有限制 */
+@property (nonatomic, assign) NSInteger maxVideoByte;
 
 + (instancetype)shareInstance;
 - (void)showBrowerWithMediaType:(BSAssetMediaType)type

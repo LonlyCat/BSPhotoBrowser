@@ -80,7 +80,7 @@
     _model = model;
     
     __weak typeof(self) weakSelf = self;
-    [model getThumbImageWithSize:CGSizeMake(100, 100) completed:^(UIImage *image)
+    [model getThumbImageWithSize:CGSizeZero completed:^(UIImage *image)
     {
         [weakSelf.imageView setImage:image];
     }];

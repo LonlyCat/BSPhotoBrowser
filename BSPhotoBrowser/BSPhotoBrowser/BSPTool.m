@@ -177,4 +177,72 @@
     }];
 }
 
+- (void)getVideoWithAsset:(PHAsset *)asset
+                limitByte:(NSInteger)limitByte
+               completion:(void(^)(NSURL *fileUrl, NSError *error))completion
+{
+    PHVideoRequestOptions *option = [[PHVideoRequestOptions alloc] init];
+    option.networkAccessAllowed = YES;
+    [_cachingImageManager requestAVAssetForVideo:asset
+                                         options:option
+                                   resultHandler:^(AVAsset * _Nullable asset, AVAudioMix * _Nullable audioMix, NSDictionary * _Nullable info)
+    {
+        AVURLAsset *urlAsset = (AVURLAsset *)asset;
+        
+        NSURL *url = urlAsset.URL;
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        
+        if (limitByte != 0
+            && data.length > limitByte)
+        {
+            if (completion)
+            {
+                NSError *error = [NSError errorWithDomain:NSCocoaErrorDomain
+                                                     code:-99
+                                                 userInfo:nil];
+                completion(nil, error);
+            }
+        }
+        else
+        {
+            if (completion)
+            {
+                completion(url, nil);
+            }
+        }
+    }];
+}
+
+- (void)getPhotosBytesWithArray:(NSArray *)photos
+                     completion:(void (^)(NSInteger photosBytes))completion
+{
+    __block NSInteger dataLength = 0;
+    __block NSInteger count = photos.count;
+    
+    for (int i = 0; i < photos.count; i++) {
+        BSPhotoModel *model = photos[i];
+        [_cachingImageManager requestImageDataForAsset:model.asset options:nil resultHandler:^(NSData * _Nullable imageData, NSString * _Nullable dataUTI, UIImageOrientation orientation, NSDictionary * _Nullable info) {
+            dataLength += imageData.length;
+            count--;
+            if (count <= 0) {
+                if (completion) {
+                    completion(dataLength);
+                }
+            }
+        }];
+    }
+}
+
+- (NSString *)transformDataLength:(NSInteger)dataLength {
+    NSString *bytes = @"";
+    if (dataLength >= 0.1 * (1024 * 1024)) {
+        bytes = [NSString stringWithFormat:@"%.1fM",dataLength/1024/1024.0];
+    } else if (dataLength >= 1024) {
+        bytes = [NSString stringWithFormat:@"%.0fK",dataLength/1024.0];
+    } else {
+        bytes = [NSString stringWithFormat:@"%zdB",dataLength];
+    }
+    return bytes;
+}
+
 @end

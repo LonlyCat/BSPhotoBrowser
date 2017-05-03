@@ -34,7 +34,12 @@
 }
 
 #pragma mark - BSPhotoBrowserDelegate
-- (void)browserDidSelectedImages:(NSArray<BSPhotoModel *> *)images
+- (void)browserDidSelectedImages:(NSArray<UIImage *> *)images
+{
+    NSLog(@"image: %@", images);
+}
+
+- (void)browserDidSelectedVideo:(NSURL *)videoUrl
 {
     
 }

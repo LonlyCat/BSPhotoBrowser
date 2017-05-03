@@ -11,19 +11,35 @@
 #import "BSPTool.h"
 #import <Photos/Photos.h>
 
+@interface BSPhotoModel ()
+
+@property (nonatomic, assign) CGSize thumbSize;
+
+@end
+
 @implementation BSPhotoModel
 
 - (void)getThumbImageWithSize:(CGSize)size
                     completed:(void (^)(UIImage *))completed
 {
-    if (_thumbImage && completed)
+    if (CGSizeEqualToSize(CGSizeZero, size))
     {
-        completed(_thumbImage);
+        size = CGSizeMake(kScreenWidth, KScreenHeight);
+    }
+    
+    if (_thumbImage
+        && CGSizeEqualToSize(_thumbSize, size))
+    {
+        if (completed)
+        {
+            completed(_thumbImage);
+        }
         return;
     }
     
+    _thumbSize = size;
     [[BSPTool shareInstance] getPhotoWithAsset:_asset
-                                              size:size
+                                              size:_thumbSize
                                      isSynchronous:NO
                                         completion:^(UIImage *photo, NSDictionary *info, BOOL isDegraded)
     {
@@ -68,7 +84,14 @@
         _thumbImage = nil;
         _originImage = nil;
         
-        _mediaType = asset.mediaType;
+        _mediaType = (BSAssetMediaType)asset.mediaType;
+        if (_mediaType == BSAssetMediaTypeVideo)
+        {
+            _duration = _asset.duration;
+        }
+        
+        [self getOriginImageWithCompleted:nil];
+        [self getThumbImageWithSize:CGSizeMake(kScreenWidth, KScreenHeight) completed:nil];
     }
 }
 

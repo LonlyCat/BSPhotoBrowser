@@ -37,6 +37,9 @@
 		66CC2B491EB883DF00AC6628 /* browser_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66CC2B471EB883DF00AC6628 /* browser_play@2x.png */; };
 		66CC2B4A1EB883DF00AC6628 /* browser_play@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66CC2B481EB883DF00AC6628 /* browser_play@3x.png */; };
 		66CC2B4D1EB8968700AC6628 /* BSPPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CC2B4C1EB8968700AC6628 /* BSPPreviewCell.m */; };
+		66D0F8361EB9B225002AC458 /* browser_original@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D0F8341EB9B225002AC458 /* browser_original@2x.png */; };
+		66D0F8371EB9B225002AC458 /* browser_original@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66D0F8351EB9B225002AC458 /* browser_original@3x.png */; };
+		66D0F83A1EB9BAEF002AC458 /* BSPPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D0F8391EB9BAEF002AC458 /* BSPPlayerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +109,10 @@
 		66CC2B481EB883DF00AC6628 /* browser_play@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "browser_play@3x.png"; sourceTree = "<group>"; };
 		66CC2B4B1EB8968700AC6628 /* BSPPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPPreviewCell.h; sourceTree = "<group>"; };
 		66CC2B4C1EB8968700AC6628 /* BSPPreviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPPreviewCell.m; sourceTree = "<group>"; };
+		66D0F8341EB9B225002AC458 /* browser_original@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "browser_original@2x.png"; sourceTree = "<group>"; };
+		66D0F8351EB9B225002AC458 /* browser_original@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "browser_original@3x.png"; sourceTree = "<group>"; };
+		66D0F8381EB9BAEF002AC458 /* BSPPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSPPlayerView.h; sourceTree = "<group>"; };
+		66D0F8391EB9BAEF002AC458 /* BSPPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSPPlayerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +233,8 @@
 				66CC2B411EB8270900AC6628 /* BSPAlbumListCell.m */,
 				66CC2B4B1EB8968700AC6628 /* BSPPreviewCell.h */,
 				66CC2B4C1EB8968700AC6628 /* BSPPreviewCell.m */,
+				66D0F8381EB9BAEF002AC458 /* BSPPlayerView.h */,
+				66D0F8391EB9BAEF002AC458 /* BSPPlayerView.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -244,6 +253,8 @@
 		667AFDC41EB2F27900F1F481 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				66D0F8341EB9B225002AC458 /* browser_original@2x.png */,
+				66D0F8351EB9B225002AC458 /* browser_original@3x.png */,
 				66CC2B471EB883DF00AC6628 /* browser_play@2x.png */,
 				66CC2B481EB883DF00AC6628 /* browser_play@3x.png */,
 				66CC2B431EB8614D00AC6628 /* browser_close@2x.png */,
@@ -378,9 +389,11 @@
 				667AFDCF1EB2F27900F1F481 /* browser_choose_pressed@2x.png in Resources */,
 				667AFDD21EB2F27900F1F481 /* browser_pull@3x.png in Resources */,
 				661E8DE81EB1E4DD00927437 /* LaunchScreen.storyboard in Resources */,
+				66D0F8371EB9B225002AC458 /* browser_original@3x.png in Resources */,
 				667AFDCD1EB2F27900F1F481 /* browser_choose_normal@2x.png in Resources */,
 				66CC2B461EB8614D00AC6628 /* browser_close@3x.png in Resources */,
 				661E8DE51EB1E4DD00927437 /* Assets.xcassets in Resources */,
+				66D0F8361EB9B225002AC458 /* browser_original@2x.png in Resources */,
 				661E8DE31EB1E4DD00927437 /* Main.storyboard in Resources */,
 				66CC2B451EB8614D00AC6628 /* browser_close@2x.png in Resources */,
 				667AFDD01EB2F27900F1F481 /* browser_choose_pressed@3x.png in Resources */,
@@ -413,6 +426,7 @@
 				661E8E151EB1F54F00927437 /* BSPhotoBrowserController.m in Sources */,
 				66CC2B3F1EB824AE00AC6628 /* BSPhotoCell.m in Sources */,
 				661E8E0E1EB1EC1600927437 /* BSPTool.m in Sources */,
+				66D0F83A1EB9BAEF002AC458 /* BSPPlayerView.m in Sources */,
 				667AFDD71EB3155E00F1F481 /* BSPAlbumModel.m in Sources */,
 				661E8DDD1EB1E4DD00927437 /* AppDelegate.m in Sources */,
 				66CC2B421EB8270900AC6628 /* BSPAlbumListCell.m in Sources */,
@@ -571,6 +585,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F7Q8CT99FG;
 				INFOPLIST_FILE = BSPhotoBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Pilot.BSPhotoBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -583,6 +598,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F7Q8CT99FG;
 				INFOPLIST_FILE = BSPhotoBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Pilot.BSPhotoBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
